@@ -1,0 +1,9 @@
+git_src --branch gardenlinux https://github.com/cyberus-technology/cloud-hypervisor.git
+
+# debian specific things
+cp -r debian "$dir/src/"
+
+apply_patches
+
+version="46.0-3"
+message="Update to 46.0-3"

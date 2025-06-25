@@ -1,0 +1,94 @@
+cloud-hypervisor (46.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 46.0
+
+cloud-hypervisor (45.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 45.0
+
+cloud-hypervisor (44.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 44.0
+
+cloud-hypervisor (43.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 43.0
+
+cloud-hypervisor (41.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 41.0
+
+cloud-hypervisor (37.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 37.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Sun, 17 Dec 2023 17:43:00 +0200
+
+cloud-hypervisor (36.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 36.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Thu, 02 Nov 2023 17:43:00 +0200
+
+cloud-hypervisor (35.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 35.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Thu, 21 Sep 2023 18:24:45 +0200
+
+cloud-hypervisor (33.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 33.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Sat, 01 Jul 2023 18:24:45 +0200
+
+cloud-hypervisor (32.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 32.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Tue, 23 May 2023 18:24:45 +0200
+
+cloud-hypervisor (31.1-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 31.1
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Wed, 19 Apr 2023 18:24:45 +0200
+
+cloud-hypervisor (31.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 31.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Sat, 08 Apr 2023 18:24:45 +0200
+
+cloud-hypervisor (28.1-2) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 28.1
+
+cloud-hypervisor (28.0-2) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Switch to building unified binary on AMD64
+
+cloud-hypervisor (28.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 28.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Thu, 17 Nov 2022 19:43:32 +0200
+
+cloud-hypervisor (27.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 27.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Fri, 30 Sep 2022 19:43:32 +0200
+
+cloud-hypervisor (26.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 26.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Mon, 22 Aug 2022 19:43:32 +0200
+
+cloud-hypervisor (25.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+
+  * Cloud Hypervisor 25.0
+
+-- Anatol Belski <anbelski@linux.microsoft.com>  Mon, 25 Jul 2022 18:24:45 +0200
+

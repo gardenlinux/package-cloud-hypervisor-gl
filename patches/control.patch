@@ -1,0 +1,16 @@
+--- a/debian/control
++++ b/debian/control
+@@ -1,10 +1,10 @@
+-Source: cloud-hypervisor
++Source: cloud-hypervisor-gl
+ Maintainer: Anatol Belski <anbelski@linux.microsoft.com>
+ Homepage: https://www.cloudhypervisor.org/
+-Build-Depends: debhelper, debhelper-compat (= 10), rust-bin, gcc, binutils, libssl-dev, libcap2-bin
++Build-Depends: debhelper, debhelper-compat (= 10), cargo, gcc, binutils, libssl-dev, libcap2-bin
+ 
+ 
+-Package: cloud-hypervisor
++Package: cloud-hypervisor-gl
+ Architecture: amd64 arm64
+ Depends: bash, libgcc1, libcap2, libc6
+ Description: Cloud Hypervisor is a Virtual Machine Monitor (VMM) that runs on top of KVM
