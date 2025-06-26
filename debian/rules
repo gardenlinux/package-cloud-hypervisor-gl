@@ -15,15 +15,15 @@ override_dh_auto_build-arch:
 	cargo build --release --target=$(RUST_DEF_TARGET) --all --offline
 
 override_dh_auto_install:
-	install -d debian/cloud-hypervisor/usr
-	install -d debian/cloud-hypervisor/usr/bin
-	install -D -m755  ./target/$(RUST_DEF_TARGET)/release/cloud-hypervisor debian/cloud-hypervisor/usr/bin
+	install -d debian/cloud-hypervisor-gl/usr
+	install -d debian/cloud-hypervisor-gl/usr/bin
+	install -D -m755  ./target/$(RUST_DEF_TARGET)/release/cloud-hypervisor debian/cloud-hypervisor-gl/usr/bin
 	# /sbin/setcap cap_net_admin+ep debian/cloud-hypervisor/usr/bin/cloud-hypervisor
-	install -D -m755  ./target/$(RUST_DEF_TARGET)/release/ch-remote debian/cloud-hypervisor/usr/bin
-	install -d debian/cloud-hypervisor/usr/lib
-	install -d debian/cloud-hypervisor/usr/lib/cloud-hypervisor
-	install -D -m755 target/$(RUST_DEF_TARGET)/release/vhost_user_block debian/cloud-hypervisor/usr/lib/cloud-hypervisor
-	install -D -m755 target/$(RUST_DEF_TARGET)/release/vhost_user_net debian/cloud-hypervisor/usr/lib/cloud-hypervisor
+	install -D -m755  ./target/$(RUST_DEF_TARGET)/release/ch-remote debian/cloud-hypervisor-gl/usr/bin
+	install -d debian/cloud-hypervisor-gl/usr/lib
+	install -d debian/cloud-hypervisor-gl/usr/lib/cloud-hypervisor
+	install -D -m755 target/$(RUST_DEF_TARGET)/release/vhost_user_block debian/cloud-hypervisor-gl/usr/lib/cloud-hypervisor
+	install -D -m755 target/$(RUST_DEF_TARGET)/release/vhost_user_net debian/cloud-hypervisor-gl/usr/lib/cloud-hypervisor
 
 override_dh_auto_clean:
 	cargo clean
