@@ -5,5 +5,5 @@ cp -r debian "$dir/src/"
 
 apply_patches
 
-version="46.0-4"
-message="Update to 46.0-4"
+version="46.0-5"
+message="Update to 46.0-5"
