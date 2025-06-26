@@ -1,5 +1,5 @@
---- control	2025-06-26 10:26:48.910670238 +0000
-+++ control.new	2025-06-26 10:29:54.040039311 +0000
+--- a/debian/control
++++ b/debian/control
 @@ -1,11 +1,11 @@
 -Source: cloud-hypervisor
 +Source: cloud-hypervisor-gl
