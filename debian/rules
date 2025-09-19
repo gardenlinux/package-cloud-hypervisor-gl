@@ -10,6 +10,8 @@ include /usr/share/dpkg/buildflags.mk
 	dh $@
 
 override_dh_auto_build-arch:
+	rustup default stable
+	rustup target add $(RUST_DEF_TARGET)
 	# /usr/src/packages/SOURCES is OBS specific path
 	cargo vendor
 	cargo build --release --target=$(RUST_DEF_TARGET) --all --offline
@@ -26,7 +28,13 @@ override_dh_auto_install:
 	install -D -m755 target/$(RUST_DEF_TARGET)/release/vhost_user_net debian/cloud-hypervisor-gl/usr/lib/cloud-hypervisor
 
 override_dh_auto_clean:
-	cargo clean
+	@if [ -f ./target/$(RUST_DEF_TARGET)/release/cloud-hypervisor ] ; \
+	then \
+		echo "Cleaning up cargo build files"; \
+		cargo clean; \
+	else \
+		echo "Skipping cargo clean, no build files found"; \
+	fi
 
 ifeq ($(DEB_BUILD_ARCH_CPU), amd64)
     RUST_DEF_TARGET := x86_64-unknown-linux-gnu
