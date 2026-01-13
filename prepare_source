@@ -1,4 +1,4 @@
-git_src --branch gardenlinux https://github.com/cyberus-technology/cloud-hypervisor.git
+git_src --branch gardenlinux-staging https://github.com/cyberus-technology/cloud-hypervisor.git
 
 # debian specific things
 cp -r debian "$dir/src/"
@@ -7,5 +7,5 @@ apply_patches
 
 version="50.0-1" # current obs base (do not change for rebuilds)
 version_increment="0"
-version_suffix="gl${version_increment}~bp1877"
+version_suffix="gl${version_increment}~sta1877"
 message="Update to $version $version_suffix"
