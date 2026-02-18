@@ -1,8 +1,8 @@
 # vim: ft=bash
 
 # commit sha from https://github.com/cyberus-technology/cloud-hypervisor/commits/gardenlinux-staging/
-CLOUD_HYPERVISOR_COMMIT_SHA="430fec023788de257ced26460ecd2df921ada3af"
-version_increment="11"
+CLOUD_HYPERVISOR_COMMIT_SHA="f6731640d3846e9b6050876c2b9f3944623108d3"
+version_increment="12"
 
 git_src_commit "$CLOUD_HYPERVISOR_COMMIT_SHA" https://github.com/cyberus-technology/cloud-hypervisor.git
 
