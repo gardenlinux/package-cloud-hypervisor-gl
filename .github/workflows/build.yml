@@ -12,3 +12,4 @@ jobs:
     uses: gardenlinux/package-build/.github/workflows/build.yml@main
     with:
       release: false #${{ github.ref == 'refs/heads/main' }}
+      arch: '["amd64"]'
