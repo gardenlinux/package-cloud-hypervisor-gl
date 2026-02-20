@@ -2,7 +2,7 @@
 
 # commit sha from https://github.com/cyberus-technology/cloud-hypervisor/commits/gardenlinux/
 CLOUD_HYPERVISOR_COMMIT_SHA="31b620083c8bf481d383f5af798db8118e0118dd"
-version_increment="6"
+version_increment="7"
 
 git_src_commit "$CLOUD_HYPERVISOR_COMMIT_SHA" https://github.com/cyberus-technology/cloud-hypervisor.git
 
