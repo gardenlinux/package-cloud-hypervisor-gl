@@ -1,8 +1,12 @@
 diff --git a/debian/changelog b/debian/changelog
-index 221d265..f146a80 100644
+index 221d265..6dfd81d 100644
 --- a/debian/changelog
 +++ b/debian/changelog
-@@ -1,3 +1,7 @@
+@@ -1,3 +1,11 @@
++cloud-hypervisor-gl (51.1-1gl0) testing; urgency=low
++
++  * rename package
++
 +cloud-hypervisor-gl (50.0-1gl0) testing; urgency=low
 +
 +  * rename package
