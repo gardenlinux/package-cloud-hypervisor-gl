@@ -1,8 +1,8 @@
 # vim: ft=bash
 
 # commit sha from https://github.com/cyberus-technology/cloud-hypervisor/commits/gardenlinux-staging/
-CLOUD_HYPERVISOR_COMMIT_SHA="e9482dee47fcadebc1001c785e01d0bf01ee46ff"
-version_increment="16"
+CLOUD_HYPERVISOR_COMMIT_SHA="fd748453e870949b7f69d1368a3b630f33433994"
+version_increment="0"
 
 git_src_commit "$CLOUD_HYPERVISOR_COMMIT_SHA" https://github.com/cyberus-technology/cloud-hypervisor.git
 
@@ -11,6 +11,6 @@ cp -r debian "$dir/src/"
 
 apply_patches
 
-version="50.0-1" # current obs base (do not change for rebuilds)
+version="51.1-1" # current obs base (do not change for rebuilds)
 version_suffix="gl${version_increment}~sta1877"
 message="Update to $version $version_suffix"
