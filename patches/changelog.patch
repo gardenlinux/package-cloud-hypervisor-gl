@@ -1,14 +1,15 @@
 diff --git a/debian/changelog b/debian/changelog
-index 221d265..6dfd81d 100644
+index 221d265..8b74e0a 100644
 --- a/debian/changelog
 +++ b/debian/changelog
-@@ -1,3 +1,11 @@
-+cloud-hypervisor-gl (51.1-1gl0) testing; urgency=low
+@@ -1,3 +1,12 @@
++cloud-hypervisor-gl (51.1-1gl0~bp2150) testing; urgency=low
 +
-+  * rename package
++  * Cloud Hypervisor 51.1
 +
-+cloud-hypervisor-gl (50.0-1gl0) testing; urgency=low
++cloud-hypervisor-gl (50.0-1gl0~bp2150) testing; urgency=low
 +
++  * Cloud Hypervisor 50.0
 +  * rename package
 +
  cloud-hypervisor (50.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
