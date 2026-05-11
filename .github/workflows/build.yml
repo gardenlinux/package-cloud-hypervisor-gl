@@ -4,6 +4,8 @@ on:
       - main
       - rel-1877
       - sta-1877
+      - rel-2150
+      - sta-2150
   workflow_dispatch:
   # on pr
   pull_request:
@@ -11,13 +13,15 @@ on:
       - main
       - rel-1877
       - sta-1877
+      - rel-2150
+      - sta-2150
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 jobs:
   build:
     uses: gardenlinux/package-build/.github/workflows/build.yml@main
     with:
       # publish not on PR
       publish_release: ${{ github.event_name != 'pull_request' }}
-      release: false #${{ github.ref == 'refs/heads/main' }}
+      release: false
       arch: '["amd64"]'
