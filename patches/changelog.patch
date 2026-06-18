@@ -1,17 +1,16 @@
 diff --git a/debian/changelog b/debian/changelog
-index 221d265..8b74e0a 100644
+index 2b3cf6b..569413f 100644
 --- a/debian/changelog
 +++ b/debian/changelog
-@@ -1,3 +1,12 @@
-+cloud-hypervisor-gl (51.1-1gl0~bp2150) testing; urgency=low
+@@ -1,3 +1,11 @@
++cloud-hypervisor-gl (52.1-1gl0~bp2150) stable unstable bionic focal impish jammy kinetic; urgency=low
 +
-+  * Cloud Hypervisor 51.1
++  * Cloud Hypervisor 52.1-1gl0~bp2150 renaming
++  * Fixed a vCPU pause deadlock
++  * Fixed ACPI S5 generation to emit a complete sleep package, improving guest compatibility, notably OpenBSD boot
++  * Tightened seccomp allowlists for event-monitor and HTTP-server paths
++  * Removed a noisy VMM log message and kept minor logging behavior aligned with the fork
 +
-+cloud-hypervisor-gl (50.0-1gl0~bp2150) testing; urgency=low
-+
-+  * Cloud Hypervisor 50.0
-+  * rename package
-+
- cloud-hypervisor (50.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
+ cloud-hypervisor (52.0-1) stable unstable bionic focal impish jammy kinetic; urgency=low
  
-   * Cloud Hypervisor 50.0
+   * Cloud Hypervisor 52.0
