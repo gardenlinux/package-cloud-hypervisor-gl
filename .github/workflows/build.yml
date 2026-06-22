@@ -4,6 +4,8 @@ on:
       - main
       - rel-1877
       - sta-1877
+      - rel-2150
+      - sta-2150
   workflow_dispatch:
   # on pr
   pull_request:
@@ -11,6 +13,8 @@ on:
       - main
       - rel-1877
       - sta-1877
+      - rel-2150
+      - sta-2150
   schedule:
     - cron: '0 0 * * *'
 jobs:
