@@ -1,6 +1,22 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
+  "extends": ["config:best-practices"],
+  "baseBranchPatterns": [
+    "$default",
+    "/^rel-\\d+$/",
+    "/^sta-\\d+$/"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^prepare_source$/"],
+      "matchStrings": [
+        "CLOUD_HYPERVISOR_COMMIT_SHA=\"(?<currentDigest>[0-9a-f]{40})\""
+      ],
+      "currentValueTemplate": "gardenlinux",
+      "depNameTemplate": "cyberus-technology/cloud-hypervisor",
+      "packageNameTemplate": "https://github.com/cyberus-technology/cloud-hypervisor.git",
+      "datasourceTemplate": "git-refs"
+    }
   ]
 }
