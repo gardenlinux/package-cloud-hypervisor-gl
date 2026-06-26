@@ -1,10 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"],
+  "extends": [
+    "config:best-practices",
+    "helpers:githubDigestChangelogs"
+  ],
   "baseBranchPatterns": [
     "$default",
     "/^rel-\\d+$/",
     "/^sta-\\d+$/"
+  ],
+  "packageRules": [
+    {
+      "matchDepNames": ["cyberus-technology/cloud-hypervisor"],
+      "sourceUrl": "https://github.com/cyberus-technology/cloud-hypervisor"
+    }
   ],
   "customManagers": [
     {
