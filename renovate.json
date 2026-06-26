@@ -11,9 +11,8 @@
       "customType": "regex",
       "managerFilePatterns": ["/^prepare_source$/"],
       "matchStrings": [
-        "CLOUD_HYPERVISOR_COMMIT_SHA=\"(?<currentDigest>[0-9a-f]{40})\""
+        "# commit sha from https://github\\.com/cyberus-technology/cloud-hypervisor/commits/(?<currentValue>[^\\n]+?)/\\nCLOUD_HYPERVISOR_COMMIT_SHA=\"(?<currentDigest>[0-9a-f]{40})\""
       ],
-      "currentValueTemplate": "{{#if (containsString baseBranch 'sta-')}}gardenlinux-staging{{else}}gardenlinux{{/if}}",
       "depNameTemplate": "cyberus-technology/cloud-hypervisor",
       "packageNameTemplate": "https://github.com/cyberus-technology/cloud-hypervisor.git",
       "datasourceTemplate": "git-refs"
