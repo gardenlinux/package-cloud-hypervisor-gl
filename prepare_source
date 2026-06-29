@@ -1,10 +1,10 @@
 # vim: ft=bash
 
-# commit sha from https://github.com/cyberus-technology/cloud-hypervisor/commits/gardenlinux/
-CLOUD_HYPERVISOR_COMMIT_SHA="079ed4dcb9bbc168405fe4462248ec3663da863a"
+# release tag from https://github.com/cyberus-technology/cloud-hypervisor/tags
+CLOUD_HYPERVISOR_RELEASE_TAG="gardenlinux-release-26-06-19"
 version_increment="1"
 
-git_src_commit "$CLOUD_HYPERVISOR_COMMIT_SHA" https://github.com/cyberus-technology/cloud-hypervisor.git
+git_src_commit "$CLOUD_HYPERVISOR_RELEASE_TAG" https://github.com/cyberus-technology/cloud-hypervisor.git
 
 # debian specific things
 cp -r debian "$dir/src/"
