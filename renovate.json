@@ -11,12 +11,34 @@
   ],
   "packageRules": [
     {
+      "description": "Track GitHub releases for main and rel-* branches",
       "matchDepNames": ["cyberus-technology/cloud-hypervisor"],
+      "matchBaseBranches": ["$default", "/^rel-\\d+$/"],
+      "sourceUrl": "https://github.com/cyberus-technology/cloud-hypervisor",
+      "allowedVersions": "/^gardenlinux-release-/"
+    },
+    {
+      "description": "Track commits from gardenlinux-staging for sta-* branches",
+      "matchDepNames": ["cyberus-technology/cloud-hypervisor"],
+      "matchBaseBranches": ["/^sta-\\d+$/"],
       "sourceUrl": "https://github.com/cyberus-technology/cloud-hypervisor"
     }
   ],
   "customManagers": [
     {
+      "description": "Match release tags for main and rel-* branches",
+      "customType": "regex",
+      "managerFilePatterns": ["/^prepare_source$/"],
+      "matchStrings": [
+        "CLOUD_HYPERVISOR_RELEASE_TAG=\"(?<currentValue>gardenlinux-release-[^\"]+)\""
+      ],
+      "depNameTemplate": "cyberus-technology/cloud-hypervisor",
+      "packageNameTemplate": "cyberus-technology/cloud-hypervisor",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^(?<version>.+)$"
+    },
+    {
+      "description": "Match commit SHAs for sta-* branches",
       "customType": "regex",
       "managerFilePatterns": ["/^prepare_source$/"],
       "matchStrings": [
