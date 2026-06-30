@@ -1,8 +1,8 @@
 # vim: ft=bash
 
 # release tag from https://github.com/cyberus-technology/cloud-hypervisor/tags
-CLOUD_HYPERVISOR_RELEASE_TAG="gardenlinux-release-26-06-19"
-version_increment="1"
+CLOUD_HYPERVISOR_RELEASE_TAG="gardenlinux-release-26-06-29"
+version_increment="2"
 
 git_src_commit "$CLOUD_HYPERVISOR_RELEASE_TAG" https://github.com/cyberus-technology/cloud-hypervisor.git
 
