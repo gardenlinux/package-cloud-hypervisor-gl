@@ -2,7 +2,7 @@
 
 # release tag from https://github.com/cyberus-technology/cloud-hypervisor/tags
 CLOUD_HYPERVISOR_RELEASE_TAG="gardenlinux-release-26-07-03"
-version_increment="2"
+version_increment="3"
 
 git_src_commit "$CLOUD_HYPERVISOR_RELEASE_TAG" https://github.com/cyberus-technology/cloud-hypervisor.git
 
