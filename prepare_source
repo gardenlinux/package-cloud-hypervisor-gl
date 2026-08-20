@@ -2,7 +2,9 @@
 
 # release tag from https://github.com/cyberus-technology/cloud-hypervisor/tags
 CLOUD_HYPERVISOR_RELEASE_TAG="gardenlinux-release-26-07-14"
-version_increment="4"
+version_increment="0"
+
+DATE_OF_TAG="${CLOUD_HYPERVISOR_RELEASE_TAG//[^0-9]/}"
 
 git_src_commit "$CLOUD_HYPERVISOR_RELEASE_TAG" https://github.com/cyberus-technology/cloud-hypervisor.git
 
@@ -11,6 +13,6 @@ cp -r debian "$dir/src/"
 
 apply_patches
 
-version="52.1-1" # current obs base (do not change for rebuilds)
-version_suffix="gl${version_increment}~bp1877"
+version="52.1" # current obs base (do not change for rebuilds)
+version_suffix="+${DATE_OF_TAG}-1gl${version_increment}~bp1877"
 message="Update to $version $version_suffix"
